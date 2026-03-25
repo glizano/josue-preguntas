@@ -29,13 +29,19 @@
                     </path>
                 </svg>
                 <h2 class="text-xl font-bold text-gray-800 mb-2">¿Listo para el desafío?</h2>
-                <p class="text-gray-600 mb-4">Encontrarás 20 preguntas de selección única. Al comprobar tu respuesta, te
-                    mostraremos el versículo bíblico exacto que la justifica.</p>
+                <p class="text-gray-600 mb-6">Elige si deseas responder una selección aleatoria de 20 preguntas o el banco completo. Al comprobar tu respuesta, te mostraremos el versículo bíblico exacto que la justifica.</p>
             </div>
-            <button onclick="startQuiz()"
-                class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
-                Comenzar Quiz
-            </button>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button onclick="startQuiz(20)"
+                    class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105 w-full sm:w-auto">
+                    Quiz de 20 Preguntas
+                </button>
+                <button onclick="startQuiz('all')"
+                    class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105 w-full sm:w-auto">
+                    Todas las Preguntas
+                </button>
+            </div>
         </div>
 
         <!-- Contenedor del Quiz -->
@@ -115,7 +121,7 @@
 
             <button onclick="resetQuiz()"
                 class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg shadow-md transition duration-300">
-                Volver a intentar
+                Volver al Inicio
             </button>
         </div>
 

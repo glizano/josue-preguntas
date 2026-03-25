@@ -20,13 +20,18 @@ const explanationBox = document.getElementById('explanation-box');
 const verseRef = document.getElementById('verse-ref');
 const verseText = document.getElementById('verse-text');
 
-function startQuiz() {
+function startQuiz(amount) {
     startScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
     
-    // Aleatorizar y tomar 20 preguntas
+    // Aleatorizar y tomar la cantidad elegida
     const shuffled = [...quizData].sort(() => 0.5 - Math.random());
-    currentQuizData = shuffled.slice(0, 20);
+    
+    if (amount === 'all') {
+        currentQuizData = shuffled;
+    } else {
+        currentQuizData = shuffled.slice(0, amount);
+    }
 
     loadQuestion();
 }
