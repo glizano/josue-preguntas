@@ -3,6 +3,7 @@ let score = 0;
 let selectedOption = null;
 let isAnswerChecked = false;
 let incorrectAnswers = [];
+let currentQuizData = [];
 
 // Elementos del DOM
 const startScreen = document.getElementById('start-screen');
@@ -22,11 +23,16 @@ const verseText = document.getElementById('verse-text');
 function startQuiz() {
     startScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
+    
+    // Aleatorizar y tomar 20 preguntas
+    const shuffled = [...quizData].sort(() => 0.5 - Math.random());
+    currentQuizData = shuffled.slice(0, 20);
+
     loadQuestion();
 }
 
 function loadQuestion() {
-    const data = quizData[currentQuestion];
+    const data = currentQuizData[currentQuestion];
     selectedOption = null;
     isAnswerChecked = false;
 
@@ -34,8 +40,8 @@ function loadQuestion() {
     explanationBox.classList.add('hidden');
 
     // Actualizar UI general
-    questionCounter.innerText = `Pregunta ${currentQuestion + 1} de ${quizData.length}`;
-    progressBar.style.width = `${((currentQuestion + 1) / quizData.length) * 100}%`;
+    questionCounter.innerText = `Pregunta ${currentQuestion + 1} de ${currentQuizData.length}`;
+    progressBar.style.width = `${((currentQuestion + 1) / currentQuizData.length) * 100}%`;
 
     // Cargar texto de pregunta
     questionText.innerHTML = `<span class="text-blue-500 text-sm font-semibold uppercase tracking-wider block mb-2">Capítulo ${data.chapter}</span> ${data.question}`;
@@ -79,7 +85,7 @@ function selectOption(index, btnElement) {
 function checkAnswer() {
     if (selectedOption === null) return;
 
-    const data = quizData[currentQuestion];
+    const data = currentQuizData[currentQuestion];
     const allOptions = optionsContainer.children;
 
     if (!isAnswerChecked) {
@@ -116,7 +122,7 @@ function checkAnswer() {
         explanationBox.classList.remove('hidden');
 
         // Cambiar botón a Siguiente Pregunta
-        if (currentQuestion === quizData.length - 1) {
+        if (currentQuestion === currentQuizData.length - 1) {
             nextBtn.innerText = 'Ver Resultados';
             nextBtn.className = 'bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transition duration-300';
         } else {
@@ -126,7 +132,7 @@ function checkAnswer() {
     } else {
         // Modo: Pasar a siguiente
         currentQuestion++;
-        if (currentQuestion < quizData.length) {
+        if (currentQuestion < currentQuizData.length) {
             loadQuestion();
         } else {
             showResults();
@@ -139,12 +145,12 @@ function showResults() {
     resultScreen.classList.remove('hidden');
 
     const finalScore = document.getElementById('final-score');
-    finalScore.innerText = `${score} / ${quizData.length}`;
+    finalScore.innerText = `${score} / ${currentQuizData.length}`;
 
     const resultMessage = document.getElementById('result-message');
     const resultIcon = document.getElementById('result-icon');
 
-    let percentage = (score / quizData.length) * 100;
+    let percentage = (score / currentQuizData.length) * 100;
 
     if (percentage === 100) {
         resultMessage.innerText = "¡Perfecto! Tienes un conocimiento excepcional de las Escrituras.";

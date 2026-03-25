@@ -13,6 +13,19 @@ const quizData = [
         verseText: "Mi siervo Moisés ha muerto; ahora, pues, levántate y pasa este Jordán, tú y todo este pueblo, a la tierra que yo les doy a los hijos de Israel."
     },
     {
+        chapter: 1,
+        question: "¿Cuántos días dio Josué a los oficiales del pueblo para preparar comida antes de cruzar el Jordán?",
+        options: [
+            "Tres días.",
+            "Siete días.",
+            "Un día.",
+            "Catorce días."
+        ],
+        correct: 0,
+        verseRef: "Josué 1:11",
+        verseText: "Pasad por en medio del campamento y mandad al pueblo, diciendo: Preparaos comida, porque dentro de tres días pasaréis el Jordán..."
+    },
+    {
         chapter: 2,
         question: "¿A la casa de quién entraron a hospedarse los dos espías al llegar a Jericó?",
         options: [
@@ -24,6 +37,19 @@ const quizData = [
         correct: 2,
         verseRef: "Josué 2:1",
         verseText: "...fueron, y entraron en casa de una ramera que se llamaba Rahab, y posaron allí."
+    },
+    {
+        chapter: 2,
+        question: "¿Con qué ataron la ventana de Rahab para identificar su casa y que fuera salva?",
+        options: [
+            "Un cordón de grana (rojo).",
+            "Un trozo de lino blanco.",
+            "Un hilo de oro.",
+            "Una cuerda de cáñamo oscuro."
+        ],
+        correct: 0,
+        verseRef: "Josué 2:18",
+        verseText: "he aquí, cuando nosotros entremos en la tierra, tú atarás este cordón de grana a la ventana por la cual nos descolgaste..."
     },
     {
         chapter: 3,
@@ -52,6 +78,19 @@ const quizData = [
         verseText: "y mandadles, diciendo: Tomad de aquí de en medio del Jordán, del lugar donde están firmes los pies de los sacerdotes, doce piedras..."
     },
     {
+        chapter: 4,
+        question: "¿Qué hicieron con las 12 piedras que sacaron del Jordán?",
+        options: [
+            "Las usaron como armas.",
+            "Las tiraron al desierto.",
+            "Las erigieron en Gilgal.",
+            "Las llevaron a Moisés."
+        ],
+        correct: 2,
+        verseRef: "Josué 4:20",
+        verseText: "Y Josué erigió en Gilgal las doce piedras que habían traído del Jordán."
+    },
+    {
         chapter: 5,
         question: "¿A quién se encontró Josué cerca de Jericó con una espada desenvainada?",
         options: [
@@ -63,6 +102,19 @@ const quizData = [
         correct: 0,
         verseRef: "Josué 5:13-14",
         verseText: "...he aquí un varón que estaba delante de él, el cual tenía una espada desenvainada en su mano... Él respondió: No; mas como Príncipe del ejército de Jehová he venido ahora."
+    },
+    {
+        chapter: 5,
+        question: "¿Qué comida comió el pueblo el día después de la Pascua, lo cual hizo cesar el maná?",
+        options: [
+            "Carne de codorniz.",
+            "Fruto de la tierra (pan sin levadura y espigas nuevas tostadas).",
+            "Miel del peñasco.",
+            "Uvas de Hebrón."
+        ],
+        correct: 1,
+        verseRef: "Josué 5:11-12",
+        verseText: "Y al otro día de la pascua comieron del fruto de la tierra, los panes sin levadura, y en el mismo día espigas nuevas tostadas. Y el maná cesó el día siguiente..."
     },
     {
         chapter: 6,
@@ -78,6 +130,19 @@ const quizData = [
         verseText: "Y será la ciudad anatema a Jehová, con todas las cosas que están en ella; solamente Rahab la ramera vivirá..."
     },
     {
+        chapter: 6,
+        question: "¿Cuántas veces en total rodearon los israelitas la ciudad de Jericó antes de que los muros cayeran?",
+        options: [
+            "Siete veces.",
+            "Trece veces.",
+            "Seis veces.",
+            "Una vez."
+        ],
+        correct: 1,
+        verseRef: "Josué 6:3-4, 15",
+        verseText: "Rodearéis, pues, la ciudad todos los hombres de guerra, yendo alrededor de la ciudad una vez; y esto haréis durante seis días... al séptimo día daréis siete vueltas..."
+    },
+    {
         chapter: 7,
         question: "¿Quién pecó tomando del anatema, causando la derrota de Israel en Hai?",
         options: [
@@ -91,6 +156,19 @@ const quizData = [
         verseText: "Pero los hijos de Israel cometieron una prevaricación en cuanto al anatema; porque Acán hijo de Carmi... tomó del anatema; y la ira de Jehová se encendió..."
     },
     {
+        chapter: 7,
+        question: "¿Qué castigo recibió Acán por haber tomado del anatema?",
+        options: [
+            "Fue vendido como esclavo.",
+            "Fue desterrado al desierto.",
+            "Fue apedreado y quemado en el valle de Acor.",
+            "Fue puesto en prisión."
+        ],
+        correct: 2,
+        verseRef: "Josué 7:25",
+        verseText: "Y le dijo Josué: ¿Por qué nos has turbado? Túrbete Jehová en este día. Y todos los israelitas los apedrearon, y los quemaron después de apedrearlos."
+    },
+    {
         chapter: 8,
         question: "¿Qué táctica militar principal utilizaron para vencer a la ciudad de Hai en el segundo intento?",
         options: [
@@ -102,6 +180,19 @@ const quizData = [
         correct: 2,
         verseRef: "Josué 8:2",
         verseText: "Harás a Hai y a su rey como hiciste a Jericó y a su rey... pondrás emboscada a la ciudad detrás de ella."
+    },
+    {
+        chapter: 8,
+        question: "¿Qué construyó Josué en el monte Ebal después de la victoria sobre Hai?",
+        options: [
+            "Un altar de piedras enteras sobre las cuales nadie había alzado hierro.",
+            "Un templo a Jehová.",
+            "Un muro de protección.",
+            "Una estatua conmemorativa de bronce."
+        ],
+        correct: 0,
+        verseRef: "Josué 8:30-31",
+        verseText: "Entonces Josué edificó un altar a Jehová Dios de Israel en el monte Ebal... un altar de piedras enteras sobre las cuales nadie alzó hierro..."
     },
     {
         chapter: 9,
@@ -128,6 +219,19 @@ const quizData = [
         correct: 0,
         verseRef: "Josué 10:12-13",
         verseText: "...dijo en presencia de los israelitas: Sol, detente en Gabaón; y tú, luna, en el valle de Ajalón. Y el sol se detuvo y la luna se paró..."
+    },
+    {
+        chapter: 10,
+        question: "¿En dónde se escondieron los cinco reyes amorreos que huían de Josué?",
+        options: [
+            "En una pirámide.",
+            "En una cueva en Maceda.",
+            "En un bosque del Líbano.",
+            "En un templo cananeo."
+        ],
+        correct: 1,
+        verseRef: "Josué 10:16",
+        verseText: "Pero los cinco reyes huyeron, y se escondieron en una cueva en Maceda."
     },
     {
         chapter: 11,
@@ -180,6 +284,19 @@ const quizData = [
         correct: 2,
         verseRef: "Josué 14:10",
         verseText: "Ahora bien, Jehová me ha hecho vivir... estos cuarenta y cinco años, desde el tiempo que Jehová habló estas palabras a Moisés... y ahora, he aquí, hoy soy de edad de ochenta y cinco años."
+    },
+    {
+        chapter: 14,
+        question: "¿Cuál fue la razón principal que dio Caleb para pedir Hebrón como su heredad?",
+        options: [
+            "Porque era su recompensa por ser sumo sacerdote.",
+            "Porque había seguido cumplidamente a Jehová Dios.",
+            "Porque era el más joven de Israel.",
+            "Porque era amigo íntimo de Josué."
+        ],
+        correct: 1,
+        verseRef: "Josué 14:14",
+        verseText: "Por tanto, Hebrón vino a ser heredad de Caleb hijo de Jefoné cenezeo, hasta hoy, por cuanto había seguido cumplidamente a Jehová Dios de Israel."
     },
     {
         chapter: 15,
@@ -258,5 +375,18 @@ const quizData = [
         correct: 1,
         verseRef: "Josué 20:2-3",
         verseText: "Habla a los hijos de Israel y diles: Señalaos las ciudades de refugio... para que huya allí el homicida que matare a alguno por accidente y no a sabiendas."
+    },
+    {
+        chapter: 24,
+        question: "¿Qué declaración famosa hizo Josué al pueblo respecto a servir a Dios hacia el final de su vida?",
+        options: [
+            "Vosotros sois hijos del Altísimo.",
+            "Jehová peleará por vosotros, y vosotros estaréis tranquilos.",
+            "El Señor es mi pastor, nada me faltará.",
+            "Pero yo y mi casa serviremos a Jehová."
+        ],
+        correct: 3,
+        verseRef: "Josué 24:15",
+        verseText: "...escogeos hoy a quién sirváis... pero yo y mi casa serviremos a Jehová."
     }
 ];
