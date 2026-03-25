@@ -65,6 +65,32 @@ const quizData = [
         verseText: "Tú, pues, mandarás a los sacerdotes que llevan el arca del pacto, diciendo: Cuando lleguéis a la orilla del agua del Jordán, pararéis en el Jordán."
     },
     {
+        chapter: 3,
+        question: "¿A qué distancia aproximada debía mantenerse el pueblo del arca del pacto mientras caminaban?",
+        options: [
+            "Cien codos.",
+            "Dos mil codos.",
+            "Cinco mil codos.",
+            "Cincuenta codos."
+        ],
+        correct: 1,
+        verseRef: "Josué 3:4",
+        verseText: "para que sepáis el camino por donde habéis de ir; por cuanto vosotros no habéis pasado antes de ahora por este camino. Pero entre vosotros y ella haya distancia como de dos mil codos..."
+    },
+    {
+        chapter: 3,
+        question: "¿Qué pasaría en cuanto los pies de los sacerdotes que llevaban el arca tocaran el agua del Jordán?",
+        options: [
+            "El río se secaría completamente desde su nacimiento.",
+            "Las aguas se dividirían y se detendrían en un montón.",
+            "El agua se volvería dulce como la miel.",
+            "Aparecería un puente de plata sobre el río."
+        ],
+        correct: 1,
+        verseRef: "Josué 3:13",
+        verseText: "Y cuando las plantas de los pies de los sacerdotes que llevan el arca de Jehová... se asienten en las aguas del Jordán, las aguas del Jordán se dividirán; porque las aguas que vienen de arriba se detendrán en un montón."
+    },
+    {
         chapter: 4,
         question: "¿Qué utilizaron para construir un monumento conmemorativo que recordarían para siempre?",
         options: [
@@ -143,6 +169,19 @@ const quizData = [
         verseText: "Rodearéis, pues, la ciudad todos los hombres de guerra, yendo alrededor de la ciudad una vez; y esto haréis durante seis días... al séptimo día daréis siete vueltas..."
     },
     {
+        chapter: 6,
+        question: "¿Qué instrucción especial se dio a los israelitas sobre el séptimo día al rodear Jericó?",
+        options: [
+            "Rodear la ciudad siete veces y los sacerdotes tocarían las bocinas.",
+            "No rodear la ciudad, solo orar.",
+            "Entrar a la ciudad inmediatamente sin tocar bocinas.",
+            "Cantar un salmo de David."
+        ],
+        correct: 0,
+        verseRef: "Josué 6:4",
+        verseText: "...y el séptimo día daréis siete vueltas a la ciudad, y los sacerdotes tocarán las bocinas."
+    },
+    {
         chapter: 7,
         question: "¿Quién pecó tomando del anatema, causando la derrota de Israel en Hai?",
         options: [
@@ -167,6 +206,19 @@ const quizData = [
         correct: 2,
         verseRef: "Josué 7:25",
         verseText: "Y le dijo Josué: ¿Por qué nos has turbado? Túrbete Jehová en este día. Y todos los israelitas los apedrearon, y los quemaron después de apedrearlos."
+    },
+    {
+        chapter: 7,
+        question: "¿Qué objeto tomó Acán, entre otras cosas, del botín de Jericó?",
+        options: [
+            "Un manto babilónico muy bueno.",
+            "Una espada de hierro cananeo.",
+            "La corona de oro del rey de Jericó.",
+            "Dos caballos de guerra."
+        ],
+        correct: 0,
+        verseRef: "Josué 7:21",
+        verseText: "Pues vi entre los despojos un manto babilónico muy bueno, y doscientos siclos de plata, y un lingote de oro de peso de cincuenta siclos... y tomé..."
     },
     {
         chapter: 8,
@@ -195,6 +247,19 @@ const quizData = [
         verseText: "Entonces Josué edificó un altar a Jehová Dios de Israel en el monte Ebal... un altar de piedras enteras sobre las cuales nadie alzó hierro..."
     },
     {
+        chapter: 8,
+        question: "¿Cuántos hombres escogió Josué para enviar de noche a poner la emboscada detrás de la ciudad de Hai?",
+        options: [
+            "Tres mil hombres.",
+            "Treinta mil hombres.",
+            "Quinientos hombres.",
+            "Mil hombres."
+        ],
+        correct: 1,
+        verseRef: "Josué 8:3",
+        verseText: "Y se levantó Josué y toda la gente de guerra, para subir contra Hai; y escogió Josué treinta mil hombres fuertes, los cuales envió de noche."
+    },
+    {
         chapter: 9,
         question: "¿Qué pueblo usó astucia fingiendo venir de lejos con pan mohoso para hacer un pacto de paz?",
         options: [
@@ -206,6 +271,19 @@ const quizData = [
         correct: 1,
         verseRef: "Josué 9:3-5",
         verseText: "Mas los moradores de Gabaón... usaron de astucia; pues fueron y se fingieron embajadores... y todo el pan de su provisión era seco y mohoso."
+    },
+    {
+        chapter: 9,
+        question: "¿Cómo resolvieron Josué y los príncipes de Israel el problema con los gabaonitas sin romper el juramento que habían hecho?",
+        options: [
+            "Los enviaron de vuelta a su tierra original.",
+            "Los mataron secretamente durante la noche.",
+            "Los constituyeron leñadores y aguadores para la congregación.",
+            "Los forzaron a pagar un gran tributo en oro y plata."
+        ],
+        correct: 2,
+        verseRef: "Josué 9:27",
+        verseText: "Y Josué los destinó aquel día a ser leñadores y aguadores para la congregación, y para el altar de Jehová..."
     },
     {
         chapter: 10,
@@ -234,6 +312,32 @@ const quizData = [
         verseText: "Pero los cinco reyes huyeron, y se escondieron en una cueva en Maceda."
     },
     {
+        chapter: 10,
+        question: "¿Qué hicieron con los cinco reyes amorreos capturados en la cueva de Maceda antes de ejecutarlos?",
+        options: [
+            "Los obligaron a renunciar a sus tronos verbalmente.",
+            "Los capitanes de Israel pusieron sus pies sobre los cuellos de ellos.",
+            "Fueron paseados atados por todo el campamento.",
+            "Fueron crucificados en cinco árboles por la mañana."
+        ],
+        correct: 1,
+        verseRef: "Josué 10:24",
+        verseText: "...Josué llamó a todos los varones de Israel, y dijo a los principales de la gente de guerra que habían venido con él: Acercaos, y poned vuestros pies sobre los cuellos de estos reyes..."
+    },
+    {
+        chapter: 10,
+        question: "¿Sobre qué ciudad hizo Josué detenerse el sol, según su oración a Jehová?",
+        options: [
+            "Sobre Jericó.",
+            "Sobre Gabaón.",
+            "Sobre el valle de Ajalón.",
+            "Sobre Hebrón."
+        ],
+        correct: 1,
+        verseRef: "Josué 10:12",
+        verseText: "...dijo en presencia de los israelitas: Sol, detente en Gabaón; y tú, luna, en el valle de Ajalón..."
+    },
+    {
         chapter: 11,
         question: "¿Qué hizo Josué con los caballos y carros de guerra de la coalición enemiga del norte?",
         options: [
@@ -245,6 +349,19 @@ const quizData = [
         correct: 3,
         verseRef: "Josué 11:9",
         verseText: "Y Josué hizo con ellos como Jehová le había mandado: desjarretó sus caballos, y sus carros quemó a fuego."
+    },
+    {
+        chapter: 11,
+        question: "¿Quién era el rey de Hazor que convocó a la coalición del norte para pelear contra Israel en las aguas de Merom?",
+        options: [
+            "Adonisedec.",
+            "Jabín.",
+            "Og.",
+            "Sehón."
+        ],
+        correct: 1,
+        verseRef: "Josué 11:1",
+        verseText: "Cuando oyó esto Jabín rey de Hazor, envió mensaje a Jobab rey de Madón, al rey de Simrón, al rey de Acsaf..."
     },
     {
         chapter: 12,
@@ -297,6 +414,19 @@ const quizData = [
         correct: 1,
         verseRef: "Josué 14:14",
         verseText: "Por tanto, Hebrón vino a ser heredad de Caleb hijo de Jefoné cenezeo, hasta hoy, por cuanto había seguido cumplidamente a Jehová Dios de Israel."
+    },
+    {
+        chapter: 14,
+        question: "¿De qué tribu era Caleb, el cual pidió el monte de Hebrón como heredad?",
+        options: [
+            "Tribu de Benjamín.",
+            "Tribu de Leví.",
+            "Tribu de Efraín.",
+            "Tribu de Judá."
+        ],
+        correct: 3,
+        verseRef: "Josué 14:6",
+        verseText: "Y los hijos de Judá vinieron a Josué en Gilgal; y Caleb, hijo de Jefoné cenezeo, le dijo..."
     },
     {
         chapter: 15,
@@ -377,16 +507,16 @@ const quizData = [
         verseText: "Habla a los hijos de Israel y diles: Señalaos las ciudades de refugio... para que huya allí el homicida que matare a alguno por accidente y no a sabiendas."
     },
     {
-        chapter: 24,
-        question: "¿Qué declaración famosa hizo Josué al pueblo respecto a servir a Dios hacia el final de su vida?",
+        chapter: 20,
+        question: "¿Quién debía juzgar al homicida que se refugiaba en una ciudad de refugio hasta que compareciera ante la congregación?",
         options: [
-            "Vosotros sois hijos del Altísimo.",
-            "Jehová peleará por vosotros, y vosotros estaréis tranquilos.",
-            "El Señor es mi pastor, nada me faltará.",
-            "Pero yo y mi casa serviremos a Jehová."
+            "El juez del lugar o el sumo sacerdote.",
+            "Los ancianos de aquella ciudad.",
+            "Solamente Josué.",
+            "No había juicio, era libre directamente."
         ],
-        correct: 3,
-        verseRef: "Josué 24:15",
-        verseText: "...escogeos hoy a quién sirváis... pero yo y mi casa serviremos a Jehová."
+        correct: 1,
+        verseRef: "Josué 20:4",
+        verseText: "Y el que se acogiere a alguna de aquellas ciudades, se presentará a la puerta de la ciudad, y expondrá sus razones en oídos de los ancianos de aquella ciudad..."
     }
 ];
