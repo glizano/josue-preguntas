@@ -24,12 +24,12 @@ function startQuiz(amount) {
     startScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
     
-    // Aleatorizar y tomar la cantidad elegida
-    const shuffled = [...quizData].sort(() => 0.5 - Math.random());
-    
     if (amount === 'all') {
-        currentQuizData = shuffled;
+        // Ordenar por capítulo para la base completa
+        currentQuizData = [...quizData].sort((a, b) => a.chapter - b.chapter);
     } else {
+        // Aleatorizar y tomar la cantidad elegida
+        const shuffled = [...quizData].sort(() => 0.5 - Math.random());
         currentQuizData = shuffled.slice(0, amount);
     }
 
